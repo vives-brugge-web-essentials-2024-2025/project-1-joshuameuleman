@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <!-- Basisstructuur en taalinstelling van de pagina -->
+    <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat de pagina goed schaalt op mobiele apparaten -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel die in het tabblad wordt weergegeven -->
+    <title>IoT4Climate</title>
+    <!-- Verwijzing naar de CSS-stylesheet -->
+    <link rel="stylesheet" href="recources/css/style.css">
+</head>
+<body>
+    <!-- Omvattende container voor alle secties -->
+    <div class="page-content">
+        <!-- Hero-sectie met achtergrondafbeelding en introductie -->
+        <section class="hero">
+            <h1>IoT4Climate</h1>
+            <p>Innovatieve oplossingen voor een groenere toekomst</p>
+        </section>
+
+        <!-- Navigatiebalk voor het navigeren tussen secties -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#over-ons">Over Ons</a></li>
+                <li><a href="#klimaatverandering">Klimaatverandering</a></li>
+                <li><a href="#oplossingen">Onze Oplossingen</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sectie 1: Informatie over het project -->
+        <section id="over-ons" class="container">
+            <h2>Over IoT4Climate</h2>
+            <p>IoT4Climate is opgericht om IoT-technologie te gebruiken voor klimaatoplossingen.</p>
+            <p>We richten ons op het verminderen van broeikasgassen en stimuleren duurzaamheid.</p>
+            <img src="recources/images/IoT_1.jpg" alt="Team IoT4Climate" class="section-image">
+        </section>
+
+        <!-- Sectie 2: Uitleg over klimaatverandering -->
+        <section id="klimaatverandering" class="container">
+            <h2>Wat is klimaatverandering?</h2>
+            <p>Klimaatverandering veroorzaakt langdurige veranderingen in temperaturen en weerpatronen.</p>
+            <p>Menselijke activiteiten dragen bij aan deze veranderingen door het uitstoten van broeikasgassen.</p>
+            <img src="recources/images/klimaatverandering_1.jpg" alt="Klimaatverandering afbeelding" class="section-image">
+        </section>
+
+        <!-- Sectie 3: Uitleg over de IoT-oplossingen van het project -->
+        <section id="oplossingen" class="container">
+            <h2>Onze IoT-Oplossingen</h2>
+            <div class="columns">
+                <!-- Lijst met drie voorbeelden van IoT-oplossingen -->
+                <div class="column">
+                    <p>1. Slimme sensoren voor luchtkwaliteit om vervuiling te meten.</p>
+                </div>
+                <div class="column">
+                    <p>2. Monitoring van waterbronnen om verspilling te voorkomen.</p>
+                </div>
+                <div class="column">
+                    <p>3. Energiebeheersystemen voor efficiënter energiegebruik.</p>
+                </div>
+            </div>
+            <img src="recources/images/IoT_oplossingen.jpg" alt="IoT Oplossingen" class="section-image">
+        </section>
+
+        <!-- Sectie 4: Contactformulier voor gebruikers -->
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>Neem contact met ons op voor meer informatie.</p>
+            <form>
+                <!-- Invoervelden voor naam, e-mail en bericht -->
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <!-- Verstuurknop voor het formulier -->
+                <button type="submit">Verstuur</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Voettekst met copyright-informatie -->
+    <footer>
+        <p>&copy; 2024 IoT4Climate. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <!-- Link om terug naar boven te scrollen -->
+    <a href="#top" id="scroll-to-top">Back to the top</a>
+</body>
+</html>

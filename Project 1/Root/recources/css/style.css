@@ -1,0 +1,184 @@
+/* Algemene styling voor de body: verwijdert marges, stelt een standaardlettertype in, 
+   en geeft een witte achtergrondkleur */
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Witte pagina-achtergrond */
+    color: #333; /* Donkergrijze tekstkleur */
+    padding-top: 20px;
+}
+
+/* Styling voor de container die alle inhoud omvat */
+.page-content {
+    max-width: 90%; /* Pagina is maximaal 90% breed */
+    margin: auto; /* Centreert de inhoud op de pagina */
+    padding: 20px; /* Ruimte binnen de container */
+}
+
+/* Hero sectie: groot introductieblok met afbeelding en tekst */
+.hero {
+    background-image: url('../images/hero_background.webp'); /* Achtergrondafbeelding */
+    background-size: cover; /* Zorgt dat de afbeelding volledig de ruimte vult */
+    background-position: center; /* Plaatst het midden van de afbeelding centraal */
+    color: #ffffff; /* Witte tekst voor contrast */
+    text-align: center; /* Centreert tekst */
+    padding: 50px 20px; /* Ruimte binnen de sectie */
+    border-radius: 8px; /* Maakt de hoeken afgerond */
+}
+
+/* Hero sectie: titelstijl */
+.hero h1 {
+    font-size: 2.5em; /* Grote titel */
+    margin: 0; /* Geen extra ruimte rondom */
+}
+
+/* Hero sectie: tekststijl */
+.hero p {
+    font-size: 1.2em; /* Grotere tekst dan standaard */
+    margin-top: 10px; /* Ruimte boven de paragraaf */
+}
+
+/* Navigatiebalk: lijst zonder opsommingstekens en gecentreerd */
+.navbar ul {
+    list-style-type: none; /* Geen opsommingstekens */
+    padding: 0; /* Geen interne marge */
+    display: flex; /* Lijstitems naast elkaar plaatsen */
+    justify-content: center; /* Centreert de navigatie */
+    background-color: #333; /* Donkere achtergrond */
+    margin: 0; /* Geen externe marges */
+}
+
+/* Navigatiebalk: individuele lijstitems */
+.navbar li {
+    margin: 0 10px; /* Ruimte tussen de links */
+}
+
+/* Navigatielinks: basisstijl */
+.navbar a {
+    text-decoration: none; /* Verwijdert onderstreping */
+    color: #ffffff; /* Witte tekst */
+    padding: 10px 20px; /* Ruimte binnen de link */
+    display: block; /* Maakt de klikbare ruimte groter */
+    transition: background-color 0.3s; /* Soepele kleurverandering bij hover */
+    background-color: #555; /* Donkere achtergrondkleur */
+    border-radius: 5px; /* Maakt de hoeken afgerond */
+}
+
+/* Navigatielinks: stijl bij hover */
+.navbar a:hover {
+    background-color: #777; /* Lichtere achtergrondkleur bij hover */
+}
+
+/* Algemene sectiestyling */
+.container {
+    background-color: #f5f5f5; /* Lichtgrijze achtergrond */
+    padding: 20px; /* Ruimte binnen de sectie */
+    margin: 20px 0; /* Ruimte tussen secties */
+    border-radius: 8px; /* Afgeronde hoeken */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+}
+
+/* Sectietitels */
+.container h2 {
+    font-size: 1.8em; /* Grotere titeltekst */
+    color: #444; /* Donkergrijze kleur */
+    margin-bottom: 10px; /* Ruimte onder de titel */
+}
+
+/* Sectietekst */
+.container p {
+    font-size: 1em; /* Standaard tekstgrootte */
+    line-height: 1.5; /* Ruimte tussen regels voor leesbaarheid */
+}
+
+/* Afbeeldingen in secties */
+.section-image {
+    width: 100%; /* Afbeelding past binnen container */
+    max-width: 500px; /* Maximale breedte van de afbeelding */
+    margin-top: 15px; /* Ruimte boven de afbeelding */
+    border-radius: 8px; /* Afgeronde hoeken */
+    display: block; /* Zorgt dat de afbeelding gecentreerd kan worden */
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* Kolommen in de oplossingen-sectie */
+.columns {
+    display: flex; /* Plaatst kolommen naast elkaar */
+    justify-content: space-between; /* Ruimte tussen kolommen */
+    gap: 15px; /* Ruimte tussen de kolommen */
+}
+
+/* Individuele kolommen */
+.column {
+    flex: 1; /* Kolommen hebben dezelfde breedte */
+    background-color: #ffffff; /* Witte achtergrondkleur */
+    padding: 15px; /* Ruimte binnen de kolom */
+    border-radius: 8px; /* Afgeronde hoeken */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+
+/* Contactformulier styling */
+form {
+    display: flex; /* Plaatst items in een kolom */
+    flex-direction: column; /* Elementen onder elkaar */
+}
+
+form label {
+    margin: 10px 0 5px; /* Ruimte rondom de labels */
+}
+
+form input, form textarea {
+    padding: 10px; /* Binnenruimte in velden */
+    margin-bottom: 10px; /* Ruimte tussen velden */
+    border-radius: 4px; /* Afgeronde hoeken */
+    border: 1px solid #ccc; /* Lichte rand */
+}
+
+/* Verzendknop styling */
+form button {
+    padding: 10px; /* Binnenruimte in de knop */
+    background-color: #333; /* Donkere achtergrondkleur */
+    color: #fff; /* Witte tekstkleur */
+    border: none; /* Geen rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+    cursor: pointer; /* Verandert cursor bij hover */
+    transition: background-color 0.3s; /* Soepele hover-effect */
+}
+
+form button:hover {
+    background-color: #555; /* Lichtere kleur bij hover */
+}
+
+/* Voettekst styling */
+footer {
+    text-align: center; /* Gecentreerde tekst */
+    padding: 10px 0; /* Binnenruimte */
+    font-size: 0.9em; /* Kleinere tekst */
+    background-color: #333; /* Donkere achtergrondkleur */
+    color: #fff; /* Witte tekstkleur */
+    border-radius: 8px; /* Afgeronde hoeken */
+    margin-top: 20px; /* Ruimte boven de voettekst */
+}
+
+/* Scroll naar boven knop */
+#scroll-to-top {
+    display: block; /* Zorgt dat de knop zichtbaar is */
+    width: 100px; /* Breedte van de knop */
+    position: fixed; /* Vast aan de hoek van het scherm */
+    bottom: 20px; /* Afstand vanaf de onderkant */
+    right: 20px; /* Afstand vanaf de rechterkant */
+    background-color: #333; /* Donkere achtergrondkleur */
+    color: #fff; /* Witte tekstkleur */
+    padding: 10px 20px; /* Binnenruimte */
+    text-align: center; /* Tekst gecentreerd */
+    border-radius: 5px; /* Afgeronde hoeken */
+    text-decoration: none; /* Geen onderstreping */
+    cursor: pointer; /* Verandert cursor bij hover */
+    transition: background-color 0.3s; /* Soepele kleurverandering bij hover */
+}
+
+/* Hover-effect voor scroll naar boven knop */
+#scroll-to-top:hover {
+    background-color: #555; /* Lichtere kleur bij hover */
+}
